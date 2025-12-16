@@ -7,12 +7,12 @@ Projeto Acadêmico – Sistema Web de Gerenciamento de Estoque para Autopeças -
 
 ### Tela de Login
 <p align="center">
-  <img src="Imagens_Readme/Tela_Login.png" width="550">
+  <img src="Imagens_Readme/Tela de Login.png" width="550">
 </p>
 
 ### Tela de Recepção
 <p align="center">
-  <img src="Imagens_Readme/Tela_Recepcao.png" width="550">
+  <img src="Imagens_Readme/Tela de Recepção.png" width="550">
 </p>
 
 ### Cadastro
@@ -37,25 +37,25 @@ Projeto Acadêmico – Sistema Web de Gerenciamento de Estoque para Autopeças -
 
 ### Tela Inicial – Loja
 <p align="center">
-  <img src="Imagens_Readme/Tela_Inicial_Loja.png" width="550">
+  <img src="Imagens_Readme/Tela Inicial - Loja.png" width="550">
 </p>
 
 ### Tela Produto
 <p align="center">
-  <img src="Imagens_Readme/Tela_Produto.png" width="550">
+  <img src="Imagens_Readme/Tela Produto.png" width="550">
 </p>
 
 ### Tela Produtos
 <p align="center">
-  <img src="Imagens_Readme/Tela_Produtos.png" width="550">
+  <img src="Imagens_Readme/Tela Produtos.png" width="550">
 </p>
 
 ### Carrinho de Compras
 <p align="center">
-  <img src="Imagens_Readme/Carrinho_Compras.png" width="550">
+  <img src="Imagens_Readme/Carrinho de Compras.png" width="550">
 </p>
 
 ### Histórico de Compras
 <p align="center">
-  <img src="Imagens_Readme/Historico_Compras.png" width="550">
+  <img src="Imagens_Readme/Histórico de Compras.png" width="550">
 </p>
