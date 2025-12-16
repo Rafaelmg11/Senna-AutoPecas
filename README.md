@@ -6,4 +6,6 @@ Projeto Acadêmico – Sistema Web de Gerenciamento de Estoque para Autopeças -
 ## 📸 Telas do Sistema
 
 ### Tela de Login
-![Tela de Login](Imagens_Readme/Cadastro.png)
+<p align="center">
+  <img src="Imagens_Readme/Cadastro.png" width="500">
+</p>
