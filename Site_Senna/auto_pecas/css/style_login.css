@@ -1,0 +1,183 @@
+/* =========================
+   Reset e fontes
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --cor-padrao:#ff523b;
+  --cor-padrao-hover:#f3b2e5;
+  --cor-fonte:#fff;
+  --cor-fonte-p:#555;
+  --cor-btn:#563434;
+  --cor-btn-hover:#15ff00;
+  --cor-btn-fonte:#000;
+  --cor-fonte-corpo:#555;
+  --cor-fonte-corpo-leve:#777;
+  --cor-bg:#f5f7fb;
+}
+
+/* =========================
+   Body e Container
+========================= */
+body {
+  background: var(--cor-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--cor-fonte-corpo);
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 650px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* =========================
+   Títulos e textos
+========================= */
+h2 {
+  margin-bottom: 20px;
+  color: var(--cor-padrao);
+  font-weight: 700;
+  text-align: center;
+}
+
+.saudacao {
+  text-align: center;
+  margin: 22px 0;
+  color: var(--cor-padrao);
+  font-size: 1.1rem;
+}
+
+/* =========================
+   Formulários
+========================= */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+fieldset {
+  border: 2px solid var(--cor-padrao);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  background-color: #fafafa;
+  width: 100%;
+  max-width: 580px;
+}
+
+legend {
+  font-weight: bold;
+  color: var(--cor-padrao);
+  padding: 0 8px;
+  font-size: 16px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  text-align: left;
+  width: 100%;
+  max-width: 540px;
+  color: var(--cor-fonte-corpo);
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  max-width: 540px;
+  padding: 12px;
+  border: 1.5px solid var(--cor-padrao-hover);
+  border-radius: 10px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: var(--cor-padrao);
+  box-shadow: 0 0 6px rgba(255,82,59,0.4);
+  outline: none;
+}
+
+/* Ajuste específico para textarea */
+form textarea {
+  min-height: 120px;
+  resize: vertical;
+  line-height: 1.4;
+}
+
+/* =========================
+   Mostrar Senha
+========================= */
+.mostrar-senha {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;   
+  margin-top: 15px;      
+}
+.mostrar-senha input {
+  margin-bottom: 5px; 
+}
+.mostrar-senha label {
+  text-align: center; 
+  color: var(--cor-fonte-corpo-leve);
+}
+
+/* =========================
+   Botões
+========================= */
+button {
+  background-color: var(--cor-padrao);
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: transform 0.2s ease, background 0.3s ease;
+  margin: 6px;
+}
+
+button:hover {
+  background-color: var(--cor-padrao-hover);
+  color: var(--cor-btn-fonte);
+  transform: scale(1.05);
+}
+
+/* =========================
+   Animações
+========================= */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: var(--cor-padrao);
+  font-weight: 700;
+  text-align: center;
+}

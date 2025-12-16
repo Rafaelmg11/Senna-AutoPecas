@@ -1,0 +1,17 @@
+INSERT IGNORE INTO fornecedor (nome, telefone, email, cnpj, insc_estadual, endereco) VALUES
+('AutoPeças Brasil', '(11) 3456-7890', 'contato@autopecasbrasil.com.br', '12.345.678/0001-90', '123.456.789.012', 'Rua das Peças, 123 - São Paulo, SP'),
+('Mecânica Express', '(21) 9876-5432', 'vendas@mecanicaexpress.com.br', '98.765.432/0001-10', '987.654.321.098', 'Av. Automotiva, 456 - Rio de Janeiro, RJ'),
+('Peças Premium', '(31) 3344-5566', 'sac@pecaspremium.com.br', '23.456.789/0001-11', '234.567.890.123', 'Rua dos Motores, 789 - Belo Horizonte, MG'),
+('AutoCenter Sul', '(41) 3765-4321', 'contato@autocentersul.com.br', '34.567.890/0001-22', '345.678.901.234', 'Av. das Engrenagens, 101 - Curitiba, PR'),
+('Peças Rápidas', '(51) 3987-6543', 'vendas@pecasrapidas.com.br', '45.678.901/0001-33', '456.789.012.345', 'Rua dos Parafusos, 202 - Porto Alegre, RS'),
+('Distribuidora AutoParts', '(61) 3452-1789', 'sac@distribuidoraautoparts.com.br', '56.789.012/0001-44', '567.890.123.456', 'Quadra 100, Conjunto B, 303 - Brasília, DF'),
+('MegaPeças', '(71) 3678-9012', 'contato@megapeças.com.br', '67.890.123/0001-55', '678.901.234.567', 'Av. Componentes, 404 - Salvador, BA'),
+('Super Peças', '(81) 3721-0987', 'vendas@superpecas.com.br', '78.901.234/0001-66', '789.012.345.678', 'Rua das Ferramentas, 505 - Recife, PE'),
+('Nacional AutoPeças', '(85) 3321-7654', 'sac@nacionalautopecas.com.br', '89.012.345/0001-77', '890.123.456.789', 'Av. das Bielas, 606 - Fortaleza, CE'),
+('Importadora Motores', '(91) 3456-1234', 'contato@importadoramotores.com.br', '90.123.456/0001-88', '901.234.567.890', 'Travessa dos Pistões, 707 - Belém, PA'),
+('Peças Master', '(92) 3678-4321', 'vendas@pecasmaster.com.br', '01.234.567/0001-99', '012.345.678.901', 'Alameda das Velas, 808 - Manaus, AM'),
+('Auto Supply', '(95) 3345-6789', 'sac@autosupply.com.br', '12.345.679/0001-00', '123.456.789.012', 'Rua dos Carburadores, 909 - Boa Vista, RR'),
+('Central de Peças', '(96) 3451-9876', 'contato@centraldepecas.com.br', '23.456.780/0001-11', '234.567.890.123', 'Av. das Correias, 1010 - Macapá, AP'),
+('Distrito Peças', '(97) 3654-3210', 'vendas@distritopecas.com.br', '34.567.891/0001-22', '345.678.901.234', 'Travessa dos Radiadores, 1111 - São Luís, MA'),
+('Peças & Cia', '(98) 3321-4567', 'sac@pecasecia.com.br', '45.678.902/0001-33', '456.789.012.345', 'Rua dos Amortecedores, 1212 - Teresina, PI'),
+('Mundo Auto', '(99) 3456-7891', 'contato@mundoauto.com.br', '56.789.013/0001-44', '567.890.123.456', 'Alameda dos Discos, 1313 - Palmas, TO');

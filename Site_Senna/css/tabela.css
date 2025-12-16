@@ -1,0 +1,185 @@
+/* =========================
+   Container da Tabela
+========================= */
+.tabela-fornecedor-container {
+    background-color: #fff; /* container branco padrão */
+    padding: 20px;
+    border: 2px solid var(--cor-padrao); /* cor padronizada */
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: auto;
+}
+
+/* Título da Tabela */
+.tabela-fornecedor-container h2 {
+    text-align: center;
+    margin-bottom: 16px;
+    color: var(--cor-padrao);
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 2px solid var(--cor-padrao);
+    padding-bottom: 8px;
+}
+
+/* =========================
+   Tabela
+========================= */
+.tabela-fornecedor-container table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.tabela-fornecedor-container th {
+    background-color: var(--cor-padrao);
+    color: var(--cor-fonte);
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.tabela-fornecedor-container td {
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+    color: var(--cor-fonte-corpo);
+}
+
+/* Linhas alternadas */
+.tabela-fornecedor-container tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.tabela-fornecedor-container tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.tabela-fornecedor-container tr:hover {
+    background-color: var(--cor-padrao-hover);
+    color: var(--cor-fonte);
+}
+
+/* =========================
+   Botão Excluir
+========================= */
+.tabela-fornecedor-container .btn-excluir {
+    background-color: var(--cor-padrao);
+    color: var(--cor-fonte);
+    padding: 6px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.tabela-fornecedor-container .btn-excluir:hover {
+    background-color: var(--cor-padrao-hover);
+    color: var(--cor-btn-fonte);
+    transform: scale(1.05);
+}
+    
+/* Modal overlay */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.75);
+    backdrop-filter: blur(5px);
+    overflow-y: auto;
+    padding: 40px 20px;
+    text-align: left;
+
+}
+
+/* Modal content */
+.modal-content {
+    background: #fff;
+    max-width: 700px;
+    margin: 50px auto;
+    border-radius: 20px;
+    padding: 30px 25px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    position: relative;
+    animation: modalFade 0.4s ease;
+}
+
+/* Close button */
+.modal .close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.modal .close:hover {
+    color: var(--cor-padrao);
+}
+
+/* Linhas de informação */
+.cliente-info p {
+    margin: 0;
+    padding: 12px 15px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    border-left: 4px solid var(--cor-padrao);
+}
+
+/* Alternando cores */
+.cliente-info p:nth-child(odd) {
+    background-color: #fafafa;
+}
+.cliente-info p:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+/* Rótulos em destaque */
+.cliente-info p strong {
+    width: 150px;
+    text-align: left;
+    color: var(--cor-padrao);
+}
+
+/* Responsividade */
+@media(max-width: 650px) {
+    .modal-content { margin: 30px 15px; padding: 25px 20px; }
+    .cliente-info p { font-size: 14px; padding: 10px 12px; flex-direction: column; align-items: flex-start; }
+    .cliente-info p strong { width: 100%; margin-bottom: 5px; }
+}
+
+/* =========================
+   Botões do Modal
+========================= */
+.modal .ver-mais-btn,
+.modal button {
+    padding: 6px 12px;       /* menor padding */
+    font-size: 13px;         /* fonte menor */
+    border-radius: 6px;      /* cantos levemente arredondados */
+    background-color: var(--cor-padrao);
+    color: var(--cor-fonte);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.modal .ver-mais-btn:hover,
+.modal button:hover {
+    background-color: var(--cor-padrao-hover);
+    color: var(--cor-btn-fonte);
+    transform: scale(1.05);
+}

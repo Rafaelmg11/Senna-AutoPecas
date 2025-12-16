@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.container_pagina_carrinho {
+    max-width: 1400px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex; /*Põe filhos lado á lado*/
+    align-items: flex-start; /*Alinha pelo topo*/ 
+    gap: 20px;
+}
+
+/* Container principal */
+.container_carrinho {
+    display: grid;
+    grid-template-columns: 3.5fr  1.5fr;
+    width: 100%;
+    min-height: 800px;
+    background-color: #ffffff;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Área de itens */
+.carrinho_itens {
+    width: 100%;
+    background-color: #f9fafb;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+/* Container da Tabela */
+.tabela-container-carrinho {
+    max-width: 100%;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 10px auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    background: #fff;
+}
+
+/* Tabela */
+.listar-tabela-carrinho {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Cabeçalho */
+.listar-tabela-carrinho thead {
+    background: #1E3A8A;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.listar-tabela-carrinho th {
+    padding: 12px;
+    font-weight: 600;
+    text-align: left;
+}
+
+/* Linhas */
+.listar-tabela-carrinho td {
+    padding: 15px;
+    border-bottom: 1px solid #e5e7eb;
+    vertical-align: middle;
+}
+
+/* Checkbox maior */
+.listar-tabela-carrinho input[type="checkbox"] {
+    transform: scale(1.5);
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+/* Coluna da imagem */
+.listar-tabela-carrinho .col-img img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* Nome e descrição */
+.listar-tabela-carrinho .produto-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.produto-info .nome {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.produto-info .descricao {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* Botões */
+.listar-tabela-carrinho a,
+.listar-tabela-carrinho button {
+    padding: 8px 14px;
+    margin: 2px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    background-color: #3B82F6;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.listar-tabela-carrinho a:hover,
+.listar-tabela-carrinho button:hover {
+    background-color: #2563EB;
+}
+
+
+
+
+.quantidade_carrinho {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+    margin-top: 15px;  
+}
+
+.qtde-container_carrinho {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    width: auto;
+}
+
+.qtde-container_carrinho button {
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: #3B82F6;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;             
+    align-items: center;       
+    justify-content: center;    
+    line-height: 1;             
+}
+
+.qtde-container_carrinho button:hover {
+    background: #2563EB;
+}
+
+.qtde-container_carrinho input {
+    width: 40px;
+    height: 28px;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    outline: none;
+    background: #fff;
+}
+
+.estoque {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 0px;
+}
+
+.col_lixo_carrinho .lixo_carrinho {
+    font-size: 26px;
+    color: #ef4444;
+
+}
+
+.col_lixo_carrinho .remover_carrinho{
+    margin-top: 100px;
+    background-color: rgb(255, 255, 255);
+    transition: transform 0.2s;
+}
+
+.col_lixo_carrinho .remover_carrinho:hover {
+    transform: scale(1.2);
+    background-color: #fff;
+}
+
+.listar-tabela-carrinho input[type="checkbox"]:hover {
+    transform: scale(1.7);
+    transition: transform 0.4s;
+}
+
+.preco_total {
+    font-size: 16px;
+    font-weight: bold;
+    color: #16a34a;
+    margin-left: 3px;
+}
+
+.valor_total_produto {
+    text-align: justify;
+    width: 130px;
+}
+
+
+.resumo_compra hr{
+    padding: 0 !important;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+
+}
+
+.comprar_carrinho{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 10px auto !important;
+    background-color: #2563EB;
+    color: #FFF;
+    border: none;
+    border-radius: 8px;
+    transition: 0,3;
+}
+
+.comprar_carrinho:hover{
+    cursor: pointer;
+    background-color: #163b8b;
+}

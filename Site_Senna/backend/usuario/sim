@@ -1,0 +1,9 @@
+$id_usuario = $pdo->lastInsertId(); // pega o id do usuário inserido
+        
+        $sqlFuncionario = "INSERT INTO funcionario 
+            (id_usuario, nome_funcionario) 
+            VALUES (:id_usuario, :nome_funcionario)";
+        $stmt = $pdo->prepare($sqlFuncionario);
+        $stmt->bindParam(":id_usuario", $id_usuario);
+        $stmt->bindParam(":nome_funcionario", $nome_usuario);
+        $stmt->execute();

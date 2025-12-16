@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*====================== VARIÁVEIS DE CORES ======================*/
+:root {
+  --cor-padrao:#5424A2;
+  --cor-padrao-hover:#6e21ea;
+  --cor-fonte:#ffffff;
+  --cor-fonte-p:#555555;
+  --cor-btn:#264653;
+  --cor-btn-hover:rgb(98, 0, 255);
+  --cor-btn-fonte:#ffffff;
+  --cor-fonte-corpo:#333333;
+  --cor-fonte-corpo-leve:#777777;
+  --cor-bg:#f0f4f8;
+}
+
+/*====================== BODY E HTML ======================*/
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cor-bg);
+}
+
+/*====================== CONTAINER ======================*/
+.container {
+    margin-left: 220px; /* espaço para o sidebar */
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    transition: margin-left 0.3s ease;
+}
+
+/*====================== SIDEBAR ======================*/
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;    
+    height: 100vh;
+    width: 220px;
+    background-color: #5424A2;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: width 0.3s ease;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+/* Sidebar colapsada */
+.sidebar.collapsed {
+    width: 60px;
+}
+
+/* Ajuste do container quando sidebar colapsada */
+.container.sidebar-collapsed {
+    margin-left: 60px;
+}
+
+/*====================== LOGO SIDEBAR ======================*/
+.sidebar-logo {
+    font-size: 20px;
+    height: 90px;
+    font-weight: 700;
+    background: var(--cor-padrao-hover);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+/*====================== SEPARADOR ======================*/
+hr {
+    width: 90%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    margin: 15px auto;
+    border-radius: 50px;
+}
+
+/*====================== ACCORDION BOTÃO ======================*/
+.accordion-btn {
+    width: 100%;
+    height: 65px;
+    padding: 14px 20px;
+    border: none;
+    outline: none;
+    background: var(--cor-padrao);
+    color: var(--cor-fonte);
+    text-align: left;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.accordion-btn:hover {
+    background: var(--cor-padrao-hover);
+}
+
+/*====================== ACCORDION ICON ======================*/
+.accordion-icon {
+    transition: transform 0.7s ease;
+}
+
+.accordion.active .accordion-icon {
+    transform: rotate(-180deg);
+}
+
+/*====================== ACCORDION CONTAINER ======================*/
+.accordion-container {
+    max-height: 0;
+    overflow: hidden;
+    background: #7442c5;
+    border-radius: 0px;
+    transition: max-height 0.7s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+/*====================== LINKS DO ACCORDION ======================*/
+.accordion-container a {
+    display: flex;       
+    align-items: center; 
+    gap: 12px;           
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 17px;
+    margin-top: 7px;
+    transition: all 0.3s ease;
+    position: relative;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+.accordion-container a.active-link {
+    font-weight: bold;
+    color: #6aff00;
+}
+
+.accordion-container a:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15); 
+}
+
+.accordion-container a .icon {
+    font-size: 18px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.accordion-container a:hover .icon {
+    transform: scale(1.5);
+}
+
+/* Cores hover específicas por tipo */
+.accordion-container a:hover .edit { color: #00e1ff; }
+.accordion-container a:hover .lixo { animation: shakeScale 0.4s ease-in-out forwards; color: #3fc1c9; }
+.accordion-container a:hover .add { color: #15ff7f; }
+.accordion-container a:hover .busca { color: #f0f0f0; }
+
+/*====================== ACCORDION ATIVO ======================*/
+.accordion.active .accordion-container {
+    max-height: 500px;
+}
+
+/*====================== ANIMAÇÕES ======================*/
+@keyframes shake {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); }
+  50% { transform: rotate(10deg); }
+  75% { transform: rotate(-10deg); }
+}
+
+@keyframes shakeScale {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.3) rotate(0deg); }
+    50% { transform: scale(1.3) rotate(-10deg); }
+    75% { transform: scale(1.3) rotate(10deg); }
+    100% { transform: scale(1.3) rotate(0deg); }
+}
+
+/*====================== BOTÃO SIDEBAR ======================*/
+.sidebar button.logout-btn {
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 12px 25px;
+    width: 85%;
+    height: 55px;
+    font-size: 17px;
+    font-weight: 600;
+    background: #ff5858;
+    color: #fff;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.sidebar button.logout-btn:hover {
+    background: #ff0000;
+}
+
+/*====================== BOTÃO TOGGLE ======================*/
+.toggle-sidebar {
+    position: absolute;
+    top: 10px;
+    right: -35px;
+    background: #5424A2;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 999;
+}
+
+/*====================== FORMULÁRIOS ======================*/
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 0 auto; /* centraliza */
+    max-width: 750px; /* largura máxima */
+}
+
+.formulario-linhas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.formulario-coluna {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+legend {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #1B4D3E;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 100%;
+    transition: 0.2s;
+}
+
+input:focus, select:focus {
+    border-color: #0062ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,173,239,0.5);
+}
+
+/*====================== BOTÕES ======================*/
+button.botao,
+.botoes button {
+    background-color: #006aff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 10px;
+}
+
+button.botao:hover,
+.botoes button:hover {
+    background-color: #000be3;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/*====================== TABELAS ======================*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 10px 15px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+
+th {
+    background-color: #1B4D3E;
+    color: #fff;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #d9c2ff4a;
+}
+
+a.btn-excluir {
+    background-color: #ff4b4b;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+a.btn-excluir:hover {
+    background-color: #ff9900;
+}
+
+a.btn-excluir i:hover {
+    transform: scale(1.3);
+    color: #ffffff !important;
+}
+
+/*====================== PERFIL USUÁRIO ======================*/
+.sidebar-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.user-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+}
+
+.user-name {
+    font-size: 17px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    max-width: 150px;
+    word-wrap: break-word;
+}
+
+/*====================== RESPONSIVIDADE ======================*/
+@media screen and (max-width: 1024px) {
+    .container { margin-left: 220px; padding: 15px; }
+    .formulario-linhas { flex-direction: column; }
+}
+
+@media screen and (max-width: 768px) {
+    .container { margin-left: 60px; padding: 10px; }
+    .formulario-coluna { min-width: 100%; }
+    table th, table td { font-size: 13px; padding: 8px; }
+    .botoes button { font-size: 13px; padding: 8px 10px; }
+}
+
+@media screen and (max-width: 480px) {
+    .container { margin-left: 0; }
+}
+
+/* ======================= BOTÕES DA TABELA ====================== */
+.ver-mais-btn,
+table a {
+    background-color: #7b00ff;
+    color: var(--cor-fonte);
+    border: none;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.ver-mais-btn:hover,
+table a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    background-color: #510fbb;
+    color: var(--cor-fonte);
+}
+
+/* Ícones dentro dos botões */
+.ver-mais-btn i,
+table a i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.ver-mais-btn:hover i,
+table a:hover i {
+    transform: scale(1.3);
+    color: #ab8904;
+}
+
+/* Ícone do botão excluir */
+a.btn-excluir i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+a.btn-excluir:hover i {
+    transform: scale(1.3);
+    color: #ffffff; 
+}
+
+/* ======================= MODAL ====================== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.75);
+    backdrop-filter: blur(5px);
+    padding: 60px 20px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 25px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    animation: fadeIn 0.4s ease;
+}
+
+.modal .close {
+    color: #333;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.modal .close:hover {
+    color: #e63946;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* ======================= CLIENTE CARD ====================== */
+.cliente-card {
+    margin-top: 15px;
+}
+
+.cliente-info p {
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+
+.tabela th {
+    background-color: #5c15a7; /* azul do sistema */
+    color: #ffffff;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
+/* Hover leve para dar destaque */
+.tabela th:hover {
+    background-color: #510fbb; /* azul um pouco mais escuro ao passar o mouse */
+}
+
+
+/* ======================= FORMULARIOS ====================== */
+h2{
+    color: #6200ff;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+legend{
+    color: #17003b;
+    font-size: 18px;
+}
