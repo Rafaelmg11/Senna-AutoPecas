@@ -5,57 +5,66 @@ Projeto Acadêmico – Sistema Web de Gerenciamento de Estoque para Autopeças -
 
 ## 📸 Telas do Sistema
 
-### Tela de Login
-<p align="center">
-  <img src="Imagens_Readme/Tela de Login.png" width="500">
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <strong>Tela de Login</strong><br>
+      <img src="Imagens_Readme/Tela de Login.png" width="500">
+    </td>
+    <td align="center">
+      <strong>Tela de Recepção</strong><br>
+      <img src="Imagens_Readme/Tela de Recepção.png" width="500">
+    </td>
+  </tr>
 
-### Tela de Recepção
-<p align="center">
-  <img src="Imagens_Readme/Tela de Recepção.png" width="500">
-</p>
+  <tr>
+    <td align="center">
+      <strong>Tela de Cadastro</strong><br>
+      <img src="Imagens_Readme/Cadastro.png" width="500">
+    </td>
+    <td align="center">
+      <strong>Tela de Busca</strong><br>
+      <img src="Imagens_Readme/Busca.png" width="500">
+    </td>
+  </tr>
 
-### Tela de Cadastro
-<p align="center">
-  <img src="Imagens_Readme/Cadastro.png" width="500">
-</p>
+  <tr>
+    <td align="center">
+      <strong>Tela de Atualizar</strong><br>
+      <img src="Imagens_Readme/Atualizar.png" width="500">
+    </td>
+    <td align="center">
+      <strong>Tela de Excluir</strong><br>
+      <img src="Imagens_Readme/Excluir.png" width="500">
+    </td>
+  </tr>
 
-### Tela de Busca
-<p align="center">
-  <img src="Imagens_Readme/Busca.png" width="500">
-</p>
+  <tr>
+    <td align="center">
+      <strong>Tela Inicial – Loja</strong><br>
+      <img src="Imagens_Readme/Tela Inicial - Loja.png" width="500">
+    </td>
+    <td align="center">
+      <strong>Tela Unitária de Produto</strong><br>
+      <img src="Imagens_Readme/Tela Produto.png" width="500">
+    </td>
+  </tr>
 
-### Tela de Atualizar
-<p align="center">
-  <img src="Imagens_Readme/Atualizar.png" width="500">
-</p>
+  <tr>
+    <td align="center">
+      <strong>Tela Produtos</strong><br>
+      <img src="Imagens_Readme/Tela Produtos.png" width="500">
+    </td>
+    <td align="center">
+      <strong>Carrinho de Compras</strong><br>
+      <img src="Imagens_Readme/Carrinho de Compras.png" width="500">
+    </td>
+  </tr>
 
-### Tela de Excluir
-<p align="center">
-  <img src="Imagens_Readme/Excluir.png" width="500">
-</p>
-
-### Tela Inicial – Loja
-<p align="center">
-  <img src="Imagens_Readme/Tela Inicial - Loja.png" width="500">
-</p>
-
-### Tela Unitária de Produto
-<p align="center">
-  <img src="Imagens_Readme/Tela Produto.png" width="500">
-</p>
-
-### Tela Produtos
-<p align="center">
-  <img src="Imagens_Readme/Tela Produtos.png" width="500">
-</p>
-
-### Carrinho de Compras
-<p align="center">
-  <img src="Imagens_Readme/Carrinho de Compras.png" width="500">
-</p>
-
-### Histórico de Compras
-<p align="center">
-  <img src="Imagens_Readme/Histórico de Compras.png" width="500">
-</p>
+  <tr>
+    <td align="center" colspan="2">
+      <strong>Histórico de Compras</strong><br>
+      <img src="Imagens_Readme/Histórico de Compras.png" width="500">
+    </td>
+  </tr>
+</table>
