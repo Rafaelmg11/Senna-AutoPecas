@@ -65,11 +65,18 @@ Este projeto foi desenvolvido como parte de uma atividade acadêmica do Curso T�
 
 ## ▶️ Como Executar
 
-1. Clone o repositório
-2. Configure o banco de dados MySQL
-3. Instale as dependências
-4. Execute o arquivo main.py
+1 Clone o repositório
+2. Siga o arquivo "instruções"
 
+---
+
+## 👥 Autores
+
+- Rafael de Almeida de Magalhães
+- Kaio Gomes do Nascimento Mazza
+- Eberth Rodrigues
+
+---
 
 ## 📸 Telas do Sistema
 
