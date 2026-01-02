@@ -37,7 +37,7 @@ Este projeto foi desenvolvido como parte de uma atividade acadêmica do Curso T�
   - Faixa de preço.
   - Fornecedor.
 
-### Carrinho de Compras
+# Carrinho de Compras
 - Visualização dos produtos adicionados ao carrinho.
 - Alteração da quantidade dos produtos, com atualização do valor unitário e do valor total da compra.
 - Remoção de produtos do carrinho.
