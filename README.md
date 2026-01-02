@@ -11,7 +11,7 @@ Além do controle interno, o projeto conta com um protótipo de loja online, no 
 Este projeto foi desenvolvido como parte de uma atividade acadêmica do Curso Técnico SENAI em Desenvolvimento de Sistemas, com a intenção de aplicar conhecimentos aprendidos de HTML, CSS, JavaScript, PHP, modelagem de sistemas e banco de dados.
 
 ---
-# ⚙️ Funcionalidades do Sistema
+# ⚙️ Funcionalidades do Gerenciamento de Estoque
 
 ## Perfis de Acesso
 - Distinção de diferentes níveis de perfis de usuários.
@@ -22,8 +22,9 @@ Este projeto foi desenvolvido como parte de uma atividade acadêmica do Curso T�
 - CRUD de Fornecedor.
 - CRUD de Funcionário.
 
-## Loja Online
-- Página unitaria de produto com:
+# Funcionalidades da Loja Online
+
+## Página unitaria de produto com:
   - Exibição de informações detalhadas e imagens.
   - Alteração da quantidade com atualização do valor.
   - Adicionar produto ao carrinho.
@@ -31,7 +32,6 @@ Este projeto foi desenvolvido como parte de uma atividade acadêmica do Curso T�
   - Exibição de produtos relacionados.
 
 ## Filtragem de Produtos
-- Filtro de produtos por:
   - Categoria.
   - Marca.
   - Faixa de preço.
