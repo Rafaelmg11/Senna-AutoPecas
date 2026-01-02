@@ -22,6 +22,8 @@ Este projeto foi desenvolvido como parte de uma atividade acadêmica do Curso T�
 - CRUD de Fornecedor.
 - CRUD de Funcionário.
 
+---
+
 # ⚙️ Funcionalidades da Loja Online
 
 ## Página unitaria de produto com:
@@ -45,8 +47,28 @@ Este projeto foi desenvolvido como parte de uma atividade acadêmica do Curso T�
 
 ## Histórico de Compras
 - Exibição dos produtos adquiridos e seus respectivos valores.
+  
+---
 
+## 🛠️ Tecnologias Utilizadas
 
+- HTML5
+- CSS3
+- JavaScript
+- PHP 7.4+
+- MySQL
+- PHPmyAdmin
+- WanpServer
+- Pacote Office
+
+---
+
+## ▶️ Como Executar
+
+1. Clone o repositório
+2. Configure o banco de dados MySQL
+3. Instale as dependências
+4. Execute o arquivo main.py
 
 
 ## 📸 Telas do Sistema
