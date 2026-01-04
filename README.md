@@ -76,6 +76,14 @@ Este projeto foi desenvolvido como parte de uma atividade acadêmica do Curso T�
 - Eberth Rodrigues
 
 ---
+# 📬 Contato
+
+Se você tiver **dúvidas**, **sugestões**, **feedbacks** ou **contribuições** para o projeto, fique à vontade para entrar em contato.
+
+**E-mail:** almeidarafaelmagalhaes@gmail.com  
+**Linkedin:** www.linkedin.com/in/rafael-almeida-magalhaes 
+
+---
 
 # 📸 Telas do Sistema
 
