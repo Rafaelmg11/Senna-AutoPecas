@@ -1,10 +1,10 @@
-# Vortex-AutoPecas
+# Senna-AutoPecas
 Projeto Acadêmico – Sistema Web de Gerenciamento de Estoque para Autopeças - Protótipo de Loja Online de Autopeças - Desenvolvimento completo de um sistema Web com HTML, CSS3, JavaScript, PHP e MySQL
 
 ---
 
 # 📌 Visão Geral
-Este sistema foi desenvolvido para gerenciar o estoque e as vendas de uma empresa do setor de autopeças, permitindo o controle organizado varios setores. O sistema possibilita o acompanhamento das movimentações de entrada e saída de produtos, contribuindo para uma gestão mais eficiente e confiável do estoque.
+Este sistema foi desenvolvido para gerenciar o estoque e as vendas de uma empresa do setor de autopeças, permitindo o controle organizado de varios setores. O sistema possibilita o acompanhamento das movimentações de entrada e saída de produtos, contribuindo para uma gestão mais eficiente e confiável do estoque.
 
 Além do controle interno, o projeto conta com um protótipo de loja online, no qual os clientes podem visualizar os produtos disponíveis, realizar cadastros, efetuar compras, utilizar carrinho de compras e acompanhar o histórico de pedidos. A proposta é facilitar tanto a administração da empresa quanto a experiência de compra do cliente.
 
@@ -50,7 +50,7 @@ Este projeto foi desenvolvido como parte de uma atividade acadêmica do Curso T�
   
 ---
 
-## 🛠️ Tecnologias Utilizadas
+# 🛠️ Tecnologias Utilizadas
 
 - HTML5
 - CSS3
@@ -58,19 +58,19 @@ Este projeto foi desenvolvido como parte de uma atividade acadêmica do Curso T�
 - PHP 7.4+
 - MySQL
 - PHPmyAdmin
-- WanpServer
+- WampServer
 - Pacote Office
 
 ---
 
-## ▶️ Como Executar
+# ▶️ Como Executar
 
-1 Clone o repositório
-2. Siga o arquivo "instruções"
+- Clone o repositório
+- Siga o arquivo "instruções"
 
 ---
 
-## 👥 Autores
+# 👥 Autores
 
 - Rafael de Almeida de Magalhães
 - Kaio Gomes do Nascimento Mazza
@@ -78,7 +78,7 @@ Este projeto foi desenvolvido como parte de uma atividade acadêmica do Curso T�
 
 ---
 
-## 📸 Telas do Sistema
+# 📸 Telas do Sistema
 
 <table>
   <tr>
