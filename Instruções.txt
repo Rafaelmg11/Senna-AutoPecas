@@ -1,8 +1,0 @@
-Como executar o Sistema: Senna-AutoPeças
-
-Como configurar o banco de dados:
- 1 - Abra a pasta "Banco Final";
- 2 - Copie e cole no 
-
-
-
