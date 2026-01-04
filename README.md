@@ -65,8 +65,8 @@ Este projeto foi desenvolvido como parte de uma atividade acadêmica do Curso T�
 
 # ▶️ Como Executar
 
-- 1.Clone o repositório
-- 2. Siga o arquivo "instruções"
+- Clone o repositório
+- Siga o arquivo "instruções"
 
 ---
 
