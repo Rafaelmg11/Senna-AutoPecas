@@ -50,7 +50,7 @@ Este projeto foi desenvolvido como parte de uma atividade acadêmica do Curso T�
   
 ---
 
-## 🛠️ Tecnologias Utilizadas
+# 🛠️ Tecnologias Utilizadas
 
 - HTML5
 - CSS3
@@ -58,19 +58,19 @@ Este projeto foi desenvolvido como parte de uma atividade acadêmica do Curso T�
 - PHP 7.4+
 - MySQL
 - PHPmyAdmin
-- WanpServer
+- WampServer
 - Pacote Office
 
 ---
 
-## ▶️ Como Executar
+# ▶️ Como Executar
 
-1 Clone o repositório
-2. Siga o arquivo "instruções"
+- 1.Clone o repositório
+- 2. Siga o arquivo "instruções"
 
 ---
 
-## 👥 Autores
+# 👥 Autores
 
 - Rafael de Almeida de Magalhães
 - Kaio Gomes do Nascimento Mazza
@@ -78,7 +78,7 @@ Este projeto foi desenvolvido como parte de uma atividade acadêmica do Curso T�
 
 ---
 
-## 📸 Telas do Sistema
+# 📸 Telas do Sistema
 
 <table>
   <tr>
