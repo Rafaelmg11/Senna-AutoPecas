@@ -28,6 +28,10 @@ INSERT IGNORE INTO usuario (nome_usuario, email, senha, id_perfil, senha_tempora
 ('Sandra Nunes', 'sandra.nunes@email.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 4, 1, NULL),
 ('Paulo Mendes', 'paulo.mendes@email.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 5, 0, NULL),
 ('Tânia Carvalho', 'tania.carvalho@email.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 1, 0, NULL);
+('Shawn', 'shawnmendezes@gmail.com', '$2y$10$Mp9R5OsQKF9os0gIEF7CUOV9cxU3p.jMnETf1tjMHo6O3DQNRQA.O', 1, 0, NULL),
+('Joycee', 'joycest@gmail.com', '$2y$10$W/xFmwg2joSXYM.RKixGWONkV6LgCr2N/dm6wqWTPk2YEA62Q3UtO', 2, 0, NULL),
+('ViniDiesel', 'vinidiesel@gmail.com', '$2y$10$z4sEuxjSudzg3bZZ7vSBX..w/oXdqxO7nATf49rQM/RVpa9rK.Jem', 4, 0, NULL),
+('Will', 'bezerrodbz@gmail.com', '$2y$10$7St1Yx.ezzAAHfECp9WElew1VERVKqiD9z/G/WGE8uiyDlA3isI06', 3, 0, NULL);
 
 INSERT IGNORE INTO cliente (id_usuario, nome_cliente, endereco, cpf, data_nascimento, telefone) VALUES
 (2, 'Maria Santos', 'Rua das Flores, 123 - Centro', '123.456.789-00', '1985-05-15', '(11) 99999-1111'),
