@@ -74,6 +74,7 @@ Este projeto foi desenvolvido como parte de uma atividade acadêmica do Curso T�
 - Rafael de Almeida de Magalhães
 - Kaio Gomes do Nascimento Mazza
 - Eberth Rodrigues
+- Ana Clara de Souza
 
 ---
 # 📬 Contato
