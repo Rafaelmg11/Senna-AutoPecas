@@ -59,7 +59,7 @@ Este projeto foi desenvolvido como parte de uma atividade acadÃªmica do Curso TÃ
 - MySQL
 - PHPmyAdmin
 - WampServer
-- Pacote Office
+
 
 ---
 
